@@ -1,0 +1,6 @@
+framework module Pods_ZModalVC_Tests {
+  umbrella header "Pods-ZModalVC_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

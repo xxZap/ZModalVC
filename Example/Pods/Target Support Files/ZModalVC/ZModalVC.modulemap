@@ -1,0 +1,6 @@
+framework module ZModalVC {
+  umbrella header "ZModalVC-umbrella.h"
+
+  export *
+  module * { export * }
+}

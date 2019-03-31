@@ -1,0 +1,22 @@
+{
+  "name": "ZModalVC",
+  "version": "0.1.0",
+  "summary": "A short description of ZModalVC.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Alessio Zap Boerio/ZModalVC",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Alessio Zap Boerio": "boerioalessio@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/Alessio Zap Boerio/ZModalVC.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ZModalVC/Classes/**/*"
+}

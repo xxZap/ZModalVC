@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ZModalVC_Example' do
+  pod 'ZModalVC', :path => '../'
+
+  target 'ZModalVC_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
