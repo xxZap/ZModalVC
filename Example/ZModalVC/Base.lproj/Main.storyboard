@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,18 +14,83 @@
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="ZModalVC_Example" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_modal" translatesAutoresizingMaskIntoConstraints="NO" id="j56-Ds-4vW">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="299"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="j56-Ds-4vW" secondAttribute="height" multiplier="640:510" id="19Y-7A-iIl"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zi1-r1-zfj" customClass="CustomButton" customModule="ZModalVC_Example" customModuleProvider="target">
+                                <rect key="frame" x="25" y="311.5" width="325" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="3PB-o6-68C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Open ZModalVC"/>
+                                <connections>
+                                    <action selector="firstButtonDidTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hn5-4p-PLm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZModalVC pod" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="06k-LT-eyz">
+                                <rect key="frame" x="25" y="45" width="325" height="18"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="author @xxZap" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PMH-Xl-hoj">
+                                <rect key="frame" x="25" y="63" width="325" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBY-b4-dBw" customClass="CustomButton" customModule="ZModalVC_Example" customModuleProvider="target">
+                                <rect key="frame" x="25" y="380.5" width="325" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="VRB-Or-ugZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Open ZModalTableVC"/>
+                                <connections>
+                                    <action selector="secondButtonDidTap:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Yi2-Mx-N9F"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="j56-Ds-4vW" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="0Zz-0C-WMQ"/>
+                            <constraint firstItem="zi1-r1-zfj" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="12D-Sm-Dmi"/>
+                            <constraint firstItem="Ef8-7p-4cV" firstAttribute="trailing" secondItem="gBY-b4-dBw" secondAttribute="trailing" constant="25" id="2Un-8P-xDx"/>
+                            <constraint firstItem="gBY-b4-dBw" firstAttribute="leading" secondItem="Ef8-7p-4cV" secondAttribute="leading" constant="25" id="IOy-yw-imM"/>
+                            <constraint firstItem="06k-LT-eyz" firstAttribute="top" secondItem="Ef8-7p-4cV" secondAttribute="top" constant="25" id="ITL-xt-Xhw"/>
+                            <constraint firstItem="Ef8-7p-4cV" firstAttribute="trailing" secondItem="06k-LT-eyz" secondAttribute="trailing" constant="25" id="Lsb-Vc-Ty9"/>
+                            <constraint firstItem="06k-LT-eyz" firstAttribute="leading" secondItem="Ef8-7p-4cV" secondAttribute="leading" constant="25" id="MUn-83-ivu"/>
+                            <constraint firstItem="Ef8-7p-4cV" firstAttribute="trailing" secondItem="j56-Ds-4vW" secondAttribute="trailing" id="N34-jv-QIO"/>
+                            <constraint firstItem="zi1-r1-zfj" firstAttribute="leading" secondItem="Ef8-7p-4cV" secondAttribute="leading" constant="25" id="NGn-RI-ciu"/>
+                            <constraint firstItem="j56-Ds-4vW" firstAttribute="leading" secondItem="Ef8-7p-4cV" secondAttribute="leading" id="aOK-eh-e3u"/>
+                            <constraint firstItem="PMH-Xl-hoj" firstAttribute="top" secondItem="06k-LT-eyz" secondAttribute="bottom" id="hkn-gg-jHQ"/>
+                            <constraint firstItem="gBY-b4-dBw" firstAttribute="top" secondItem="zi1-r1-zfj" secondAttribute="bottom" constant="25" id="oKO-Ld-9qe"/>
+                            <constraint firstItem="PMH-Xl-hoj" firstAttribute="leading" secondItem="Ef8-7p-4cV" secondAttribute="leading" constant="25" id="vd9-lv-2PY"/>
+                            <constraint firstItem="Ef8-7p-4cV" firstAttribute="trailing" secondItem="zi1-r1-zfj" secondAttribute="trailing" constant="25" id="wUY-Oh-AT8"/>
+                            <constraint firstItem="Ef8-7p-4cV" firstAttribute="trailing" secondItem="PMH-Xl-hoj" secondAttribute="trailing" constant="25" id="zb5-Q8-ssm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ef8-7p-4cV"/>
                     </view>
+                    <connections>
+                        <outlet property="firstButton" destination="zi1-r1-zfj" id="POh-SW-d1L"/>
+                        <outlet property="secondButton" destination="gBY-b4-dBw" id="7fD-az-J0x"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg_modal" width="211" height="168"/>
+    </resources>
 </document>

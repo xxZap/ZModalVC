@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012E15DB7C1D19D02B9B6465 /* Pods_ZModalVC_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C135A572C24923185D7D9C5 /* Pods_ZModalVC_Example.framework */; };
+		257F3C382251ECCE00278139 /* ZModalVC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 257F3C372251ECCE00278139 /* ZModalVC.framework */; };
+		257F3C3A2251F19900278139 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F3C392251F19900278139 /* CustomView.swift */; };
+		257F3C3E2251F6CD00278139 /* ModalChildExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F3C3D2251F6CD00278139 /* ModalChildExampleViewController.swift */; };
+		257F3C422251F7D400278139 /* ZNibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F3C412251F7D400278139 /* ZNibable.swift */; };
+		257F3C442251F81700278139 /* ModalChildExampleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257F3C432251F81700278139 /* ModalChildExampleViewController.xib */; };
+		257F3C4822524CFF00278139 /* ModalChildExampleTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257F3C4722524CFF00278139 /* ModalChildExampleTableViewController.xib */; };
+		257F3C4A22524D3900278139 /* ModalChildExampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F3C4922524D3900278139 /* ModalChildExampleTableViewController.swift */; };
+		257F3C4D22524DF600278139 /* SimpleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F3C4C22524DF600278139 /* SimpleTableViewCell.swift */; };
+		257F3C4F2252544400278139 /* SimpleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257F3C4E2252544400278139 /* SimpleTableViewCell.xib */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		E7D657BEA8CC4E2005337926 /* Pods_ZModalVC_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D02A6813FCD0A8826B161E5 /* Pods_ZModalVC_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,10 +36,17 @@
 
 /* Begin PBXFileReference section */
 		1161122E70B1567178C25380 /* Pods-ZModalVC_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZModalVC_Example.release.xcconfig"; path = "Target Support Files/Pods-ZModalVC_Example/Pods-ZModalVC_Example.release.xcconfig"; sourceTree = "<group>"; };
-		18FC7BDEB2528EEBBF85D30A /* ZModalVC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZModalVC.podspec; path = ../ZModalVC.podspec; sourceTree = "<group>"; };
+		18FC7BDEB2528EEBBF85D30A /* ZModalVC.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZModalVC.podspec; path = ../ZModalVC.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		19B6443642E38097CDD20257 /* Pods-ZModalVC_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZModalVC_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZModalVC_Tests/Pods-ZModalVC_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		3C135A572C24923185D7D9C5 /* Pods_ZModalVC_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZModalVC_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D02A6813FCD0A8826B161E5 /* Pods_ZModalVC_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZModalVC_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		257F3C372251ECCE00278139 /* ZModalVC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ZModalVC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		257F3C392251F19900278139 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		257F3C3D2251F6CD00278139 /* ModalChildExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalChildExampleViewController.swift; sourceTree = "<group>"; };
+		257F3C412251F7D400278139 /* ZNibable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZNibable.swift; sourceTree = "<group>"; };
+		257F3C432251F81700278139 /* ModalChildExampleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalChildExampleViewController.xib; sourceTree = "<group>"; };
+		257F3C4722524CFF00278139 /* ModalChildExampleTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalChildExampleTableViewController.xib; sourceTree = "<group>"; };
+		257F3C4922524D3900278139 /* ModalChildExampleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalChildExampleTableViewController.swift; sourceTree = "<group>"; };
+		257F3C4C22524DF600278139 /* SimpleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableViewCell.swift; sourceTree = "<group>"; };
+		257F3C4E2252544400278139 /* SimpleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleTableViewCell.xib; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* ZModalVC_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZModalVC_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,10 +57,10 @@
 		607FACE51AFB9204008FA782 /* ZModalVC_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZModalVC_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7F1B6ABAABB8043AA18DD357 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7F1B6ABAABB8043AA18DD357 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		BFECB729CC6B188B6BB8D997 /* Pods-ZModalVC_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZModalVC_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZModalVC_Example/Pods-ZModalVC_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C2ED15DBBD062761E6B7B960 /* Pods-ZModalVC_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZModalVC_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZModalVC_Tests/Pods-ZModalVC_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C83191505FF5CBBE5988113F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		C83191505FF5CBBE5988113F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012E15DB7C1D19D02B9B6465 /* Pods_ZModalVC_Example.framework in Frameworks */,
+				257F3C382251ECCE00278139 /* ZModalVC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,18 +76,44 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7D657BEA8CC4E2005337926 /* Pods_ZModalVC_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		257F3C3C2251F54A00278139 /* ZModalChildViewController */ = {
+			isa = PBXGroup;
+			children = (
+				257F3C3D2251F6CD00278139 /* ModalChildExampleViewController.swift */,
+				257F3C432251F81700278139 /* ModalChildExampleViewController.xib */,
+			);
+			name = ZModalChildViewController;
+			sourceTree = "<group>";
+		};
+		257F3C4622524C3600278139 /* ZModalChildTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				257F3C4B22524DD500278139 /* ReusableCells */,
+				257F3C4922524D3900278139 /* ModalChildExampleTableViewController.swift */,
+				257F3C4722524CFF00278139 /* ModalChildExampleTableViewController.xib */,
+			);
+			name = ZModalChildTableViewController;
+			sourceTree = "<group>";
+		};
+		257F3C4B22524DD500278139 /* ReusableCells */ = {
+			isa = PBXGroup;
+			children = (
+				257F3C4C22524DF600278139 /* SimpleTableViewCell.swift */,
+				257F3C4E2252544400278139 /* SimpleTableViewCell.xib */,
+			);
+			name = ReusableCells;
+			sourceTree = "<group>";
+		};
 		2D01B117694C6A300D68A05C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3C135A572C24923185D7D9C5 /* Pods_ZModalVC_Example.framework */,
-				5D02A6813FCD0A8826B161E5 /* Pods_ZModalVC_Tests.framework */,
+				257F3C372251ECCE00278139 /* ZModalVC.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -86,7 +126,6 @@
 				19B6443642E38097CDD20257 /* Pods-ZModalVC_Tests.debug.xcconfig */,
 				C2ED15DBBD062761E6B7B960 /* Pods-ZModalVC_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -114,8 +153,12 @@
 		607FACD21AFB9204008FA782 /* Example for ZModalVC */ = {
 			isa = PBXGroup;
 			children = (
+				257F3C4622524C3600278139 /* ZModalChildTableViewController */,
+				257F3C3C2251F54A00278139 /* ZModalChildViewController */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				257F3C392251F19900278139 /* CustomView.swift */,
+				257F3C412251F7D400278139 /* ZNibable.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -208,16 +251,17 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						DevelopmentTeam = 3WUNKJ2GAD;
+						LastSwiftMigration = 1010;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
 				};
@@ -246,9 +290,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257F3C4822524CFF00278139 /* ModalChildExampleTableViewController.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				257F3C442251F81700278139 /* ModalChildExampleViewController.xib in Resources */,
+				257F3C4F2252544400278139 /* SimpleTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,8 +382,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				257F3C4A22524D3900278139 /* ModalChildExampleTableViewController.swift in Sources */,
+				257F3C3A2251F19900278139 /* CustomView.swift in Sources */,
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				257F3C4D22524DF600278139 /* SimpleTableViewCell.swift in Sources */,
+				257F3C3E2251F6CD00278139 /* ModalChildExampleViewController.swift in Sources */,
+				257F3C422251F7D400278139 /* ZNibable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -390,12 +442,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -443,12 +497,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -482,13 +538,13 @@
 			baseConfigurationReference = BFECB729CC6B188B6BB8D997 /* Pods-ZModalVC_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3WUNKJ2GAD;
 				INFOPLIST_FILE = ZModalVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -497,13 +553,13 @@
 			baseConfigurationReference = 1161122E70B1567178C25380 /* Pods-ZModalVC_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3WUNKJ2GAD;
 				INFOPLIST_FILE = ZModalVC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -523,8 +579,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZModalVC_Example.app/ZModalVC_Example";
 			};
 			name = Debug;
@@ -541,8 +596,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZModalVC_Example.app/ZModalVC_Example";
 			};
 			name = Release;
