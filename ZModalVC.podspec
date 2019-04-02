@@ -18,11 +18,11 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = 'Description test'
-  s.homepage         = 'https://github.com/Alessio Zap Boerio/ZModalVC'
+  s.homepage         = 'https://github.com/xxZap/ZModalVC'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Alessio Zap Boerio' => 'boerioalessio@gmail.com' }
-  s.source           = { :git => 'https://github.com/Alessio Zap Boerio/ZModalVC.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/xxZap/ZModalVC.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
