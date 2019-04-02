@@ -12,14 +12,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <viewController storyboardIdentifier="AZInteractivePopupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w1Q-tW-mKi" customClass="ZModalViewController" customModule="iOS_ZapPortfolio" customModuleProvider="target">
+        <viewController storyboardIdentifier="AZInteractivePopupViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="w1Q-tW-mKi" customClass="ZModalViewController" customModule="ZModalVC" customModuleProvider="target">
             <view key="view" contentMode="scaleToFill" id="1E8-jR-mwC">
                 <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xld-89-N4J" userLabel="ViewBG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
-                        <color key="backgroundColor" white="1" alpha="0.90167487162054794" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.2538527397260274" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CP9-xL-2c9" userLabel="OutOfScreenView">

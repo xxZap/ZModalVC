@@ -25,40 +25,40 @@ open class ZModalViewController: UIViewController {
 
     // MARK: - IBOutlets
     /// The background of this ViewController. It's alpha will be animated.
-    @IBOutlet weak fileprivate var viewBG: UIView!
+    @IBOutlet weak internal var viewBG: UIView!
 
     /// Useful empty view to calculate the space between the `containerView` and the top of the safe area.
-    @IBOutlet weak fileprivate var availableSpaceView: UIView!
+    @IBOutlet weak internal var availableSpaceView: UIView!
 
     /// A simple view who wraps the `topCornerView` and has pan gesture to move the `containerView` vertically.
-    @IBOutlet weak fileprivate var draggableView: UIView!
+    @IBOutlet weak internal var draggableView: UIView!
 
     /// A simple view between `containerView` and `availableSpaceView` with rounded corners.
-    @IBOutlet weak fileprivate var topCornerView: UIView!
+    @IBOutlet weak internal var topCornerView: UIView!
 
     /// A simple view anchored to the bottom of the `containerView` that becomes visible once the user swipe up.
-    @IBOutlet weak fileprivate var outOfScreenView: UIView!
+    @IBOutlet weak internal var outOfScreenView: UIView!
 
     /// This is the scrollview that contains the `containerView`.
-    @IBOutlet weak var scrollContainerView: UIScrollView!
+    @IBOutlet weak internal var scrollContainerView: UIScrollView!
 
     /// This is the container view that contains the `subViewController`.
-    @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak internal var containerView: UIView!
 
     /// This constraint allows this view controller to move the containerView vertically.
-    @IBOutlet weak fileprivate var constraintFromBottom: NSLayoutConstraint!
+    @IBOutlet weak internal var constraintFromBottom: NSLayoutConstraint!
 
     /// The height of the `containerView`.
-    @IBOutlet weak fileprivate var containerViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak internal var containerViewHeightConstraint: NSLayoutConstraint!
 
     /// The height of the `scrollContainerView`.
-    @IBOutlet weak fileprivate var scrollContainerViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak internal var scrollContainerViewHeightConstraint: NSLayoutConstraint!
 
     /// The line view to give a feedback to the user that the view is draggable.
-    @IBOutlet weak fileprivate var handleView: UIView!
+    @IBOutlet weak internal var handleView: UIView!
 
     /// The ViewController that is contained by `containerView`.
-    public weak var subViewController: ZModalChildViewController?
+    private(set) weak var subViewController: ZModalChildViewController?
 
     // drag gesture stuff
     internal var initialTouchPoint: CGPoint = CGPoint(x: 0, y: 0)
@@ -69,7 +69,7 @@ open class ZModalViewController: UIViewController {
     internal var scrollViewPanGesture: UIPanGestureRecognizer?
 
     /// is the maximum height that will be used to calculate the return-bounce or the dismissable-distance.
-    fileprivate var maxContainerHeight: CGFloat {
+    internal var maxContainerHeight: CGFloat {
         get {
             return min(scrollContainerViewHeightConstraint.constant, UIScreen.main.bounds.height - 100)
         }
@@ -80,7 +80,7 @@ open class ZModalViewController: UIViewController {
 
     /// a flag used to know if the from-bottom-to-top animation should be launced or not.
     /// by defult it becomes false after the first viewDidAppear()
-    public var isFirstAppearance: Bool = true
+    internal var isFirstAppearance: Bool = true
 
     // MARK: - Life Cycle
     override open func viewDidLoad() {
@@ -235,8 +235,8 @@ open class ZModalViewController: UIViewController {
             self?.viewBG.alpha = 0
             self?.containerView.layoutIfNeeded()
             self?.view.layoutIfNeeded()
-        }, completion: { [weak self] (_) in onCompletionBeforeDismiss?()
-            self?.dismiss(animated: false, completion: nil)
+            }, completion: { [weak self] (_) in onCompletionBeforeDismiss?()
+                self?.dismiss(animated: false, completion: nil)
         })
     }
 
