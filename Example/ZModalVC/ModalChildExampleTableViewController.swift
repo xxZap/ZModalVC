@@ -14,8 +14,9 @@ class ModalChildExampleTableViewController: ZModalChildViewController {
     @IBOutlet weak var tableView: UITableView!
 
     // MARK: - Variables
+    internal var availableIcons: [UIImage] = [#imageLiteral(resourceName: "ic_accessibility"), #imageLiteral(resourceName: "ic_text_fields"), #imageLiteral(resourceName: "ic_credit_card"), #imageLiteral(resourceName: "ic_texture"), #imageLiteral(resourceName: "ic_swap_horizontal")]
     internal var availableTexs: [String] = [
-        "I'd rather be a bird than a fish.",
+        "\nUIViewController with a UITableView that extends ZModalChildViewController. The cells have AutomaticDimension.\n",
         "If you like tuna and tomato sauce- try combining the two. It’s really not as bad as it sounds.",
         "He said he was not there yesterday; however, many people saw him there.",
         "Is it free?",
@@ -26,9 +27,7 @@ class ModalChildExampleTableViewController: ZModalChildViewController {
         "My Mum tries to be cool by saying that she likes all the same things that I do.",
         "I am happy to take your donation; any amount will be greatly appreciated.",
         "I will never be this young again. Ever. Oh damn… I just got older.",
-        "We have never been to Asia, nor have we visited Africa.",
-        "She works two jobs to make ends meet; at least, that was her reason for not having time to join us.",
-        "Last Friday in three week’s time I saw a spotted striped blue worm shake hands with a legless lizard."
+        "We have never been to Asia, nor have we visited Africa."
     ]
 
     var lastVerticalContentOffsetY: CGFloat = 0 {
@@ -36,7 +35,6 @@ class ModalChildExampleTableViewController: ZModalChildViewController {
     }
 
     // MARK: - ZModalChildViewController overrides
-    override func getTopLineColor() -> UIColor? { return UIColor(red: 251.0/255.0, green: 233.0/255.0, blue: 247.0/255.0, alpha: 1) }
     override func getHeight() -> CGFloat { return tableView.contentSize.height }
 
     // MARK: - Life-cycle
@@ -50,7 +48,7 @@ class ModalChildExampleTableViewController: ZModalChildViewController {
 // MARK: - Private functions
 extension ModalChildExampleTableViewController {
     internal func setupUI() {
-        self.view.backgroundColor = UIColor(red: 244.0/255.0, green: 110.0/255.0, blue: 157.0/255.0, alpha: 1)
+        self.view.backgroundColor = UIColor(red: 248.0/255.0, green: 247.0/255.0, blue: 246.0/255.0, alpha: 1)
         let panGesture = UIPanGestureRecognizer(target: self, action: #selector(handlePanGesture(sender:)))
         panGesture.delegate = self
         view.addGestureRecognizer(panGesture)
@@ -85,7 +83,8 @@ extension ModalChildExampleTableViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(SimpleTableViewCell.self, indexPath: indexPath) {
-            cell.configure(withText: availableTexs[indexPath.row])
+            let icon = availableIcons[indexPath.row % availableIcons.count]
+            cell.configure(withText: availableTexs[indexPath.row], andIcon: icon)
             return cell
         }
         return UITableViewCell()
@@ -96,14 +95,6 @@ extension ModalChildExampleTableViewController: UITableViewDataSource {
 extension ModalChildExampleTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
-    }
-
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if tableView.contentOffset.y > 0 {
-
-        } else {
-
-        }
     }
 }
 

@@ -19,7 +19,8 @@ class SimpleTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        titleLabel.textColor = UIColor(red: 105.0/255.0, green: 75.0/255.0, blue: 101.0/255.0, alpha: 1)
+        titleLabel.textColor = #colorLiteral(red: 0.1072319878, green: 0.1528862847, blue: 0.08764648438, alpha: 1)
+        iconImageView.tintColor = titleLabel.textColor
     }
 
     override func layoutSubviews() {
@@ -28,8 +29,9 @@ class SimpleTableViewCell: UITableViewCell {
     }
 
     // MARK: - Public methods
-    public func configure(withText text: String?) {
+    public func configure(withText text: String?, andIcon icon: UIImage) {
         self.titleLabel.text = text
+        self.iconImageView.image = icon
         self.setNeedsLayout()
     }
 }

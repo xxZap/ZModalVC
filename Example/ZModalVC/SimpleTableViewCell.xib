@@ -19,15 +19,15 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IR-hb-ENP">
-                        <rect key="frame" x="25" y="16" width="30" height="30"/>
+                        <rect key="frame" x="25" y="12.5" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="5IR-hb-ENP" secondAttribute="height" id="05F-Zh-fly"/>
-                            <constraint firstAttribute="height" constant="30" id="cDW-kr-ykj"/>
+                            <constraint firstAttribute="height" constant="24" id="cDW-kr-ykj"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpV-g7-zIT">
-                        <rect key="frame" x="80" y="16" width="455" height="20.5"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <rect key="frame" x="74" y="16" width="461" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
@@ -37,8 +37,8 @@
                     <constraint firstAttribute="trailing" secondItem="mpV-g7-zIT" secondAttribute="trailing" constant="25" id="8XP-gV-JR2"/>
                     <constraint firstItem="5IR-hb-ENP" firstAttribute="leading" secondItem="vV0-Sq-nin" secondAttribute="leading" constant="25" id="ImG-R8-oG3"/>
                     <constraint firstItem="mpV-g7-zIT" firstAttribute="leading" secondItem="5IR-hb-ENP" secondAttribute="trailing" constant="25" id="TSF-pk-7Wf"/>
-                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mpV-g7-zIT" secondAttribute="bottom" constant="25" id="WKr-pz-1Q4"/>
-                    <constraint firstItem="5IR-hb-ENP" firstAttribute="top" secondItem="vV0-Sq-nin" secondAttribute="top" constant="16" id="uPg-CK-AGv"/>
+                    <constraint firstItem="5IR-hb-ENP" firstAttribute="centerY" secondItem="mpV-g7-zIT" secondAttribute="centerY" id="VwA-kW-pkd"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mpV-g7-zIT" secondAttribute="bottom" constant="16" id="WKr-pz-1Q4"/>
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

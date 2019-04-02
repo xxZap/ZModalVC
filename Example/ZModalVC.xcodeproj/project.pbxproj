@@ -82,23 +82,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		257F3C3C2251F54A00278139 /* ZModalChildViewController */ = {
+		257F3C3C2251F54A00278139 /* ModalChildViewController */ = {
 			isa = PBXGroup;
 			children = (
 				257F3C3D2251F6CD00278139 /* ModalChildExampleViewController.swift */,
 				257F3C432251F81700278139 /* ModalChildExampleViewController.xib */,
 			);
-			name = ZModalChildViewController;
+			name = ModalChildViewController;
 			sourceTree = "<group>";
 		};
-		257F3C4622524C3600278139 /* ZModalChildTableViewController */ = {
+		257F3C4622524C3600278139 /* ModalChildTableViewController */ = {
 			isa = PBXGroup;
 			children = (
 				257F3C4B22524DD500278139 /* ReusableCells */,
 				257F3C4922524D3900278139 /* ModalChildExampleTableViewController.swift */,
 				257F3C4722524CFF00278139 /* ModalChildExampleTableViewController.xib */,
 			);
-			name = ZModalChildTableViewController;
+			name = ModalChildTableViewController;
 			sourceTree = "<group>";
 		};
 		257F3C4B22524DD500278139 /* ReusableCells */ = {
@@ -153,8 +153,8 @@
 		607FACD21AFB9204008FA782 /* Example for ZModalVC */ = {
 			isa = PBXGroup;
 			children = (
-				257F3C4622524C3600278139 /* ZModalChildTableViewController */,
-				257F3C3C2251F54A00278139 /* ZModalChildViewController */,
+				257F3C4622524C3600278139 /* ModalChildTableViewController */,
+				257F3C3C2251F54A00278139 /* ModalChildViewController */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				257F3C392251F19900278139 /* CustomView.swift */,
