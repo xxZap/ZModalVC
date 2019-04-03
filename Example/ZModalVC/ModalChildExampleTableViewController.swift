@@ -16,18 +16,13 @@ class ModalChildExampleTableViewController: ZModalChildViewController {
     // MARK: - Variables
     internal var availableIcons: [UIImage] = [#imageLiteral(resourceName: "ic_accessibility"), #imageLiteral(resourceName: "ic_text_fields"), #imageLiteral(resourceName: "ic_credit_card"), #imageLiteral(resourceName: "ic_texture"), #imageLiteral(resourceName: "ic_swap_horizontal")]
     internal var availableTexs: [String] = [
-        "\nUIViewController with a UITableView that extends ZModalChildViewController. The cells have AutomaticDimension.\n",
-        "If you like tuna and tomato sauce- try combining the two. It’s really not as bad as it sounds.",
-        "He said he was not there yesterday; however, many people saw him there.",
-        "Is it free?",
-        "Lets all be unique together until we realise we are all the same.",
-        "I really want to go to work, but I am too sick to drive.",
-        "They got there early, and they got really good seats.",
-        "Sixty-Four comes asking for bread.",
-        "My Mum tries to be cool by saying that she likes all the same things that I do.",
-        "I am happy to take your donation; any amount will be greatly appreciated.",
-        "I will never be this young again. Ever. Oh damn… I just got older.",
-        "We have never been to Asia, nor have we visited Africa."
+        "Account",
+        "Chats",
+        "Data and Usage",
+        "Notifications",
+        "Help Center",
+        "Terms and Service",
+        "Logout"
     ]
 
     var lastVerticalContentOffsetY: CGFloat = 0 {
@@ -85,6 +80,9 @@ extension ModalChildExampleTableViewController: UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(SimpleTableViewCell.self, indexPath: indexPath) {
             let icon = availableIcons[indexPath.row % availableIcons.count]
             cell.configure(withText: availableTexs[indexPath.row], andIcon: icon)
+            cell.separatorInset = indexPath.row == tableView.numberOfRows(inSection: indexPath.section) - 1 ?
+                UIEdgeInsets(top: 0, left: UIScreen.main.bounds.width, bottom: 0, right: 0) :
+                UIEdgeInsets(top: 0, left: 15, bottom: 0, right: 0)
             return cell
         }
         return UITableViewCell()
@@ -95,6 +93,11 @@ extension ModalChildExampleTableViewController: UITableViewDataSource {
 extension ModalChildExampleTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableView.automaticDimension
+    }
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let cell = tableView.cellForRow(at: indexPath) else { return }
+        cell.isSelected = false
     }
 }
 

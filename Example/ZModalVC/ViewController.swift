@@ -12,32 +12,21 @@ import ZModalVC
 class ViewController: UIViewController {
 
     // MARK: - IBOutlets
-    @IBOutlet internal weak var firstButton: UIButton!
-    @IBOutlet internal weak var secondButton: UIButton!
+    @IBOutlet internal weak var cardView: CustomView!
+    @IBOutlet internal weak var optionButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupUI()
+        cardView.customViewDelegate = self
     }
 
-    @IBAction func firstButtonDidTap(_ sender: UIButton) {
-        openExample()
-    }
-
-    @IBAction func secondButtonDidTap(_ sender: UIButton) {
+    @IBAction func optionButtonDidTap(_ sender: UIButton) {
         openTableExample()
     }
 }
 
 // MARK: - Private functions
 extension ViewController {
-    internal func setupUI() {
-        firstButton.layer.cornerRadius = 5
-        firstButton.setTitleColor(UIColor(red: 47.0/255.0, green: 72.0/255.0, blue: 88.0/255.0, alpha: 1), for: .normal)
-        secondButton.layer.cornerRadius = 5
-        secondButton.setTitleColor(UIColor(red: 47.0/255.0, green: 72.0/255.0, blue: 88.0/255.0, alpha: 1), for: .normal)
-    }
-
     internal func openExample() {
         guard let viewController = ZModalViewController.fromNib() else { return }
         let childVC = ModalChildExampleViewController.fromNib()
@@ -55,3 +44,9 @@ extension ViewController {
     }
 }
 
+// MARK: - CustomViewDelegate
+extension ViewController: CustomViewDelegate {
+    func customViewDidTap(customView: CustomView) {
+        openExample()
+    }
+}

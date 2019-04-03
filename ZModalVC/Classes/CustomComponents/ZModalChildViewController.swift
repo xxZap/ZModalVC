@@ -14,9 +14,6 @@ open class ZModalChildViewController: UIViewController {
     /// The **ZModalViewController** who this view controller belong to
     public weak var modalParentViewController: ZModalViewController?
 
-    /// The delegate of this ZModalViewController
-    public weak var delegate: ZModalDelegate?
-
     override open func viewDidLoad() {
         super.viewDidLoad()
         hidesBottomBarWhenPushed = true

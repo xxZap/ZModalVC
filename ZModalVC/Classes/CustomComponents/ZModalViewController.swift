@@ -9,11 +9,6 @@
 import Foundation
 import UIKit
 
-public protocol ZModalDelegate: class {
-    func ancillaryPopupIsCanceling(popupViewController: ZModalChildViewController)
-    func ancillaryPopupHasMadeChanges(popupViewController: ZModalChildViewController)
-}
-
 /// This is a View Controller that comes from bottom and has vertical swipe gesture to handle the dismiss (animated).
 ///
 /// Instantiate this through **ZModalChildViewController.instantiate()**.

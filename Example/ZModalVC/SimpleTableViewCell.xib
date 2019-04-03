@@ -19,15 +19,15 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5IR-hb-ENP">
-                        <rect key="frame" x="25" y="12.5" width="24" height="24"/>
+                        <rect key="frame" x="25" y="11.5" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="5IR-hb-ENP" secondAttribute="height" id="05F-Zh-fly"/>
                             <constraint firstAttribute="height" constant="24" id="cDW-kr-ykj"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mpV-g7-zIT">
-                        <rect key="frame" x="74" y="16" width="461" height="17"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <rect key="frame" x="74" y="16" width="461" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>

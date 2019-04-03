@@ -10,7 +10,7 @@
 		0571514F386E54D81BF20CED1DA84B0A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		257F3C29225143CF00278139 /* ZModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 257F3C27225143CF00278139 /* ZModalViewController.xib */; };
 		257F3C2A225143CF00278139 /* ZModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F3C28225143CF00278139 /* ZModalViewController.swift */; };
-		257F3C512253832E00278139 /* ZModalChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F3C502253832E00278139 /* ZModalChildViewController.swift */; };
+		25F737CC2254E1E500273148 /* ZModalChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 257F3C502253832E00278139 /* ZModalChildViewController.swift */; };
 		62820AE441B6129BB7EDD395D36DDEC2 /* Pods-ZModalVC_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DE06FFF0D12A639C9A5D01803A180E1 /* Pods-ZModalVC_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		717B2889E05D9D66278EA4B711769906 /* ZModalVC-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 340B9647A1D837754523681879E17824 /* ZModalVC-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7358B7FF650EED0477F15DDCA1FB0156 /* ZModalVC-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B730E57336442AE11CABDE830B1713B /* ZModalVC-dummy.m */; };
@@ -379,7 +379,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				257F3C512253832E00278139 /* ZModalChildViewController.swift in Sources */,
 				D5E5096F1AA96D047649321B4C061779 /* Pods-ZModalVC_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7358B7FF650EED0477F15DDCA1FB0156 /* ZModalVC-dummy.m in Sources */,
+				25F737CC2254E1E500273148 /* ZModalChildViewController.swift in Sources */,
 				257F3C2A225143CF00278139 /* ZModalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

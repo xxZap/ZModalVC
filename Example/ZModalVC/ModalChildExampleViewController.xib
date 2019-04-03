@@ -17,71 +17,107 @@
                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_modal" translatesAutoresizingMaskIntoConstraints="NO" id="PKx-I6-wc5">
-                        <rect key="frame" x="0.0" y="20" width="375" height="299"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zWM-mO-pLI" userLabel="HeaderView">
+                        <rect key="frame" x="0.0" y="20" width="375" height="120"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Ks-qA-NLy">
+                                <rect key="frame" x="25" y="16" width="325" height="69"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="750" text="ZModalChildViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlM-eQ-6jl">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="18"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIViewController that extends ZModalChildViewController which elements have static size and positions." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOk-wF-GaH">
+                                        <rect key="frame" x="0.0" y="18" width="325" height="51"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="PKx-I6-wc5" secondAttribute="height" multiplier="640:510" id="tX2-mG-3gn"/>
+                            <constraint firstAttribute="height" constant="120" id="0oP-Rm-YLg"/>
+                            <constraint firstItem="0Ks-qA-NLy" firstAttribute="leading" secondItem="zWM-mO-pLI" secondAttribute="leading" constant="25" id="dLy-LD-fkA"/>
+                            <constraint firstAttribute="trailing" secondItem="0Ks-qA-NLy" secondAttribute="trailing" constant="25" id="nEM-xg-NjO"/>
+                            <constraint firstAttribute="bottom" secondItem="0Ks-qA-NLy" secondAttribute="bottom" constant="35" id="qLH-oo-klb"/>
+                            <constraint firstItem="0Ks-qA-NLy" firstAttribute="top" secondItem="zWM-mO-pLI" secondAttribute="top" constant="16" id="wOr-h7-P3v"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fiS-MA-gFM">
+                        <rect key="frame" x="0.0" y="292" width="375" height="375"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9rB-rY-Ov4">
+                                <rect key="frame" x="25" y="35" width="325" height="210.5"/>
+                                <mutableString key="text">Turin is a city and an important business and cultural centre in northern Italy. It is the capital city of the Metropolitan City of Turin (an administrative division of Italy) and of the Piedmont region, and was the first capital city of Italy from 1861 to 1865.
+
+The city has a rich culture and history, being known for its numerous art galleries, restaurants, churches, palaces, opera houses, piazzas, parks, gardens, theatres, libraries, museums and other venues. Turin is well known for its Renaissance, Baroque, Rococo, Neo-classical, and Art Nouveau architecture. Many of Turin's public squares, castles, gardens and elegant palazzi such as the Palazzo Madama, were built between the 16th and 18th centuries. A part of the historical center of Turin was inscribed in the World Heritage List under the name Residences of the Royal House of Savoy.</mutableString>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="9rB-rY-Ov4" secondAttribute="bottom" constant="20" id="4WE-rz-v2u"/>
+                            <constraint firstAttribute="trailing" secondItem="9rB-rY-Ov4" secondAttribute="trailing" constant="25" id="djG-Qd-TLU"/>
+                            <constraint firstItem="9rB-rY-Ov4" firstAttribute="top" secondItem="fiS-MA-gFM" secondAttribute="top" constant="35" id="nrD-xN-cHY"/>
+                            <constraint firstItem="9rB-rY-Ov4" firstAttribute="leading" secondItem="fiS-MA-gFM" secondAttribute="leading" constant="25" id="sz1-5t-MQM"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="torino" translatesAutoresizingMaskIntoConstraints="NO" id="Qbj-cn-H6c">
+                        <rect key="frame" x="25" y="125" width="325" height="183"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Qbj-cn-H6c" secondAttribute="height" multiplier="16:9" id="Qa8-a2-NhX"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZModalChildViewController" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QlM-eQ-6jl">
-                        <rect key="frame" x="25" y="45" width="325" height="18"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITALY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jnk-5f-2Et">
+                        <rect key="frame" x="41" y="141" width="37.5" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UIViewController that extends ZModalChildViewController which elements have static size and positions." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cOk-wF-GaH">
-                        <rect key="frame" x="25" y="63" width="325" height="43"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TURIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgM-PI-4Rx">
+                        <rect key="frame" x="41" y="163" width="59" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xYO-Vd-g69">
-                        <rect key="frame" x="243" y="216" width="107" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="rzI-Cw-mat"/>
-                        </constraints>
-                        <state key="normal" title="First interaction"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLm-LP-JQb">
-                        <rect key="frame" x="220" y="256" width="130" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="C3c-my-kSz"/>
-                        </constraints>
-                        <state key="normal" title="Second interaction"/>
-                    </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nyf-lM-ruK">
-                        <rect key="frame" x="237" y="296" width="113" height="30"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="30" id="Ja8-3e-one"/>
-                        </constraints>
-                        <state key="normal" title="Third interaction"/>
-                    </button>
                 </subviews>
-                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="PKx-I6-wc5" firstAttribute="top" secondItem="Nd8-9X-LYH" secondAttribute="top" id="6uL-GR-JtY"/>
-                    <constraint firstItem="cOk-wF-GaH" firstAttribute="top" secondItem="QlM-eQ-6jl" secondAttribute="bottom" id="8gG-FT-nlH"/>
-                    <constraint firstItem="QlM-eQ-6jl" firstAttribute="top" secondItem="Nd8-9X-LYH" secondAttribute="top" constant="25" id="ErA-rX-8o8"/>
-                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="cOk-wF-GaH" secondAttribute="trailing" constant="25" id="KSv-xB-n6u"/>
-                    <constraint firstItem="cOk-wF-GaH" firstAttribute="leading" secondItem="Nd8-9X-LYH" secondAttribute="leading" constant="25" id="MUk-0f-sVw"/>
-                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="Nyf-lM-ruK" secondAttribute="trailing" constant="25" id="R6M-6o-Eps"/>
-                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="PKx-I6-wc5" secondAttribute="trailing" id="WJi-GA-7Mj"/>
-                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="HLm-LP-JQb" secondAttribute="trailing" constant="25" id="Wva-AL-y5a"/>
-                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Nyf-lM-ruK" secondAttribute="bottom" constant="25" id="aZP-Kw-dI1"/>
-                    <constraint firstItem="xYO-Vd-g69" firstAttribute="top" secondItem="cOk-wF-GaH" secondAttribute="bottom" constant="110" id="aiM-cE-FVF"/>
-                    <constraint firstItem="HLm-LP-JQb" firstAttribute="top" secondItem="xYO-Vd-g69" secondAttribute="bottom" constant="10" id="cSU-8N-vm4"/>
-                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="xYO-Vd-g69" secondAttribute="trailing" constant="25" id="dOT-DF-I21"/>
-                    <constraint firstItem="PKx-I6-wc5" firstAttribute="leading" secondItem="Nd8-9X-LYH" secondAttribute="leading" id="eNY-zH-u3p"/>
-                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="QlM-eQ-6jl" secondAttribute="trailing" constant="25" id="r4E-su-uIB"/>
-                    <constraint firstItem="QlM-eQ-6jl" firstAttribute="leading" secondItem="Nd8-9X-LYH" secondAttribute="leading" constant="25" id="rlk-Su-DCz"/>
-                    <constraint firstItem="Nyf-lM-ruK" firstAttribute="top" secondItem="HLm-LP-JQb" secondAttribute="bottom" constant="10" id="wBd-ZK-xzS"/>
+                    <constraint firstItem="jnk-5f-2Et" firstAttribute="top" secondItem="Qbj-cn-H6c" secondAttribute="top" constant="16" id="4Db-5h-Qcj"/>
+                    <constraint firstItem="Qbj-cn-H6c" firstAttribute="leading" secondItem="Nd8-9X-LYH" secondAttribute="leading" constant="25" id="7my-ga-EVG"/>
+                    <constraint firstItem="Qbj-cn-H6c" firstAttribute="top" secondItem="zWM-mO-pLI" secondAttribute="bottom" constant="-15" id="8d4-iZ-fLb"/>
+                    <constraint firstItem="jnk-5f-2Et" firstAttribute="leading" secondItem="Qbj-cn-H6c" secondAttribute="leading" constant="16" id="96c-fo-nk3"/>
+                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="Qbj-cn-H6c" secondAttribute="trailing" constant="25" id="9Yd-BC-9bI"/>
+                    <constraint firstAttribute="bottom" secondItem="fiS-MA-gFM" secondAttribute="bottom" id="L5a-70-oVx"/>
+                    <constraint firstItem="fiS-MA-gFM" firstAttribute="leading" secondItem="Nd8-9X-LYH" secondAttribute="leading" id="Qlu-la-X1g"/>
+                    <constraint firstItem="vgM-PI-4Rx" firstAttribute="top" secondItem="jnk-5f-2Et" secondAttribute="bottom" constant="4" id="V6K-YT-fkd"/>
+                    <constraint firstItem="fiS-MA-gFM" firstAttribute="top" secondItem="Qbj-cn-H6c" secondAttribute="bottom" constant="-16" id="W0s-hb-bI5"/>
+                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="zWM-mO-pLI" secondAttribute="trailing" id="evp-us-xAL"/>
+                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="bottom" secondItem="zWM-mO-pLI" secondAttribute="top" priority="250" constant="527" id="fPx-nK-GpK"/>
+                    <constraint firstItem="Nd8-9X-LYH" firstAttribute="trailing" secondItem="fiS-MA-gFM" secondAttribute="trailing" id="hF1-nB-2ji"/>
+                    <constraint firstItem="zWM-mO-pLI" firstAttribute="top" secondItem="Nd8-9X-LYH" secondAttribute="top" id="nz6-7n-l42"/>
+                    <constraint firstItem="vgM-PI-4Rx" firstAttribute="leading" secondItem="jnk-5f-2Et" secondAttribute="leading" id="qop-mf-zpK"/>
+                    <constraint firstItem="zWM-mO-pLI" firstAttribute="leading" secondItem="Nd8-9X-LYH" secondAttribute="leading" id="qtk-iX-mhl"/>
                 </constraints>
                 <viewLayoutGuide key="safeArea" id="Nd8-9X-LYH"/>
             </view>
+            <connections>
+                <outlet property="bodyView" destination="fiS-MA-gFM" id="Z3k-U1-53b"/>
+                <outlet property="constraintBetweenHeaderTopAndSafeAreaBottom" destination="fPx-nK-GpK" id="WGy-de-QhC"/>
+                <outlet property="headerView" destination="zWM-mO-pLI" id="Oyp-DO-5QA"/>
+                <outlet property="photo" destination="Qbj-cn-H6c" id="nb4-Ks-Sc3"/>
+            </connections>
             <point key="canvasLocation" x="118" y="91"/>
         </viewController>
     </objects>
     <resources>
-        <image name="bg_modal" width="211" height="168"/>
+        <image name="torino" width="800" height="450"/>
     </resources>
 </document>
