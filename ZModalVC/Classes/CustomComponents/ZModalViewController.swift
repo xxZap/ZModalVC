@@ -309,7 +309,7 @@ extension ZModalViewController {
 // MARK: - UIScrollViewDelegate
 extension ZModalViewController: UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print(scrollView.contentOffset.y)
+//        print(scrollView.contentOffset.y)
     }
 }
 
