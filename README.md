@@ -25,9 +25,7 @@ pod 'ZModalVC'
 ```
 
 ## Usage
-<p align="left">
-    <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408062_960_720.png" width="225" height="80" alt="Work in progress">
-</p>
+:construction: :construction: Work in progress :construction: :construction:
 
 ## Author
 
