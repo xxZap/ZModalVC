@@ -13,9 +13,7 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
-## Requirements
+To run the example project, clone the repo and just open it with Xcode.
 
 ## Installation
 
@@ -25,6 +23,11 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'ZModalVC'
 ```
+
+## Usage
+<p align="left">
+    <img src="https://cdn.pixabay.com/photo/2017/06/16/07/26/under-construction-2408062_960_720.png" width="225" height="80" alt="Work in progress">
+</p>
 
 ## Author
 
