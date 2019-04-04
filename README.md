@@ -7,8 +7,8 @@
 [![Platform](https://img.shields.io/cocoapods/p/ZModalVC.svg?style=flat)](https://cocoapods.org/pods/ZModalVC)
 
 <p align="center">
-    <img src="https://github.com/xxZap/ZModalVC/blob/master/Demo1.gif" width="240" height="480" alt="Sliding Panel demo1">
-    <img src="https://github.com/xxZap/ZModalVC/blob/master/Demo2.gif" width="240" height="480" alt="Sliding Panel demo1">
+    <img src="https://github.com/xxZap/ZModalVC/blob/master/Github/Demo1.gif" width="240" height="480" alt="Sliding Panel demo1">
+    <img src="https://github.com/xxZap/ZModalVC/blob/master/Github/Demo2.gif" width="240" height="480" alt="Sliding Panel demo1">
 </p>
 
 ## Example
