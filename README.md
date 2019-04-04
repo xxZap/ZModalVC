@@ -1,5 +1,5 @@
 # ZModalVC
-# ![](https://i.imgur.com/yh2QuJQ.png)
+# ![](https://i.imgur.com/FtwlXJL.png)
 
 [![CI Status](https://img.shields.io/travis/Alessio%20Zap%20Boerio/ZModalVC.svg?style=flat)](https://travis-ci.org/Alessio%20Zap%20Boerio/ZModalVC)
 [![Version](https://img.shields.io/cocoapods/v/ZModalVC.svg?style=flat)](https://cocoapods.org/pods/ZModalVC)
