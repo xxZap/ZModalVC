@@ -11,11 +11,11 @@ import UIKit
 
 /// This is a View Controller that comes from bottom and has vertical swipe gesture to handle the dismiss (animated).
 ///
-/// Instantiate this through **ZModalChildViewController.instantiate()**.
+/// Instantiate this through ```ZModalChildViewController.instantiate()```.
 ///
-/// It presents another sub-viewcontroller inside its `containerView`.
+/// It presents another sub-viewcontroller inside its **containerView**.
 ///
-/// Add the desired sub-viewcontroller with **loadViewController()**
+/// Add the desired sub-viewcontroller with ```loadViewController()```.
 open class ZModalViewController: UIViewController {
 
     // MARK: - IBOutlets

@@ -1,0 +1,75 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalChildViewController.swift",
+      "line": 17,
+      "symbol": "ZModalChildViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalChildViewController.swift",
+      "line": 22,
+      "symbol": "ZModalChildViewController.viewWillAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalChildViewController.swift",
+      "line": 26,
+      "symbol": "ZModalChildViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalChildViewController.swift",
+      "line": 30,
+      "symbol": "ZModalChildViewController.viewDidDisappear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalChildViewController.swift",
+      "line": 58,
+      "symbol": "ZModalChildViewController.dismiss(animated:completion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalViewController.swift",
+      "line": 81,
+      "symbol": "ZModalViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalViewController.swift",
+      "line": 91,
+      "symbol": "ZModalViewController.viewDidLayoutSubviews()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalViewController.swift",
+      "line": 107,
+      "symbol": "ZModalViewController.viewDidAppear(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalViewController.swift",
+      "line": 311,
+      "symbol": "ZModalViewController.scrollViewDidScroll(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/zap/Projects/ZModalVC/ZModalVC/Classes/CustomComponents/ZModalViewController.swift",
+      "line": 318,
+      "symbol": "ZModalViewController.gestureRecognizer(_:shouldRecognizeSimultaneouslyWith:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/zap/Projects/ZModalVC"
+}
